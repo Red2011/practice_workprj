@@ -16,6 +16,7 @@ docker exec -it practice-workprj-php-fpm bash
 ```Powershell
 docker pull red2011/practice_workprj:latest
 docker run --dns 8.8.8.8 --name practice_workprj_container practice_workprj 
+docker exec -it practice_workprj_container bash
 ```
 
 <div style="background: linear-gradient(to right, mediumvioletred, mediumblue); padding: 20px;  text-align: center; font-family: 'Pacifico', cursive; border-radius: 60px;">
