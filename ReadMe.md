@@ -6,10 +6,11 @@
 
 Change the *domain_name* to the desired domain name.
 
-## With Docker
+## With Docker Build
 ```Powershell
-docker-compose up --build -d
-docker exec -it practice-workprj-php-fpm bash
+docker build -t practice-workprj-local:latest .
+docker run --dns 8.8.8.8 --name practice_workprj_container practice-workprj-local
+docker exec -it practice_workprj_container bash
 ```
 
 ## Pull Image form Docker Hub
