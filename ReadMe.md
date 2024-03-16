@@ -8,6 +8,8 @@ Change the *domain_name* to the desired domain name.
 
 ## With Docker Build
 ```Powershell
+git clone https://github.com/Red2011/practice_workprj.git project
+cd ./project
 docker build -t practice-workprj-local:latest .
 docker run --dns 8.8.8.8 --name practice_workprj_container practice-workprj-local
 docker exec -it practice_workprj_container bash
